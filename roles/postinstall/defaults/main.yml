@@ -1,0 +1,19 @@
+---
+yum_install_packages:
+  - 'epel-release'
+  - 'man'
+  - 'mc'
+  - 'vim'
+  - 'libselinux-python'
+  - 'chrony'
+  - 'rsyslog'
+
+yum_remove_packages:
+  - 'firewalld'
+
+enabled_services:
+  - 'chronyd'
+  - 'rsyslog'
+
+disabled_services:
+  - 'firewalld'
